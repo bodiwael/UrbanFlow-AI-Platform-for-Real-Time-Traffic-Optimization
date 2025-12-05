@@ -1,0 +1,12 @@
+# Arduino Libraries Required
+# Install via Arduino IDE > Tools > Manage Libraries
+
+Firebase ESP Client by Mobizt (>= 4.3.0)
+
+# Board Support Required
+# Install via Arduino IDE > Tools > Board > Boards Manager
+ESP32 by Espressif Systems (>= 2.0.0)
+
+# Python Libraries (Optional - for server-side control)
+# Install via: pip install -r requirements.txt
+firebase-admin>=6.0.0

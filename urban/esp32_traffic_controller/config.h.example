@@ -1,0 +1,42 @@
+/*
+ * Configuration File Template
+ *
+ * 1. Copy this file and rename it to: config.h
+ * 2. Fill in your actual credentials below
+ * 3. Upload to your ESP32
+ */
+
+#ifndef CONFIG_H
+#define CONFIG_H
+
+// ===== WiFi Configuration =====
+#define WIFI_SSID "your_wifi_ssid"
+#define WIFI_PASSWORD "your_wifi_password"
+
+// ===== Firebase Configuration =====
+// Get these from: https://console.firebase.google.com/
+
+// API Key (Project Settings > General > Web API Key)
+#define API_KEY "AIzaSyXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
+// Database URL (Realtime Database > Data > Copy reference URL)
+// Format: https://your-project-default-rtdb.firebaseio.com/
+#define DATABASE_URL "https://your-project-default-rtdb.firebaseio.com/"
+
+// Firebase Authentication (Create user in Authentication > Users)
+#define USER_EMAIL "esp32@yourproject.com"
+#define USER_PASSWORD "your_secure_password"
+
+// ===== Firebase Database Structure =====
+/*
+ * Expected structure in Firebase Realtime Database:
+ *
+ * {
+ *   "urban": {
+ *     "lane_light": 0,        // 0 = OFF, 1 = ON
+ *     "traffic_light": "O"    // 'R' = Red, 'Y' = Yellow, 'G' = Green, 'O' = Off
+ *   }
+ * }
+ */
+
+#endif
